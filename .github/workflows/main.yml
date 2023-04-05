@@ -2,13 +2,6 @@
   id: analyze_user_activity
   uses: peter-murray/inactive-users-action@v1
   with:
-    token: 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
+    token: ${{ secrets.ORGANIZATION_AND_REPO_ACCESS_TOKEN }}
     organization: MSILDigital
     activity_days: 90
-
-- name: Save User Activity Report
-  uses: actions/upload-artifact@v2
-  with:
-    name: reports
-    path: |
-      ${{ steps.analyze_user_activity.outputs.report_csv }}
