@@ -1,7 +1,0 @@
-name: Analyze User Activity
-id: analyze_user_activity
-uses: peter-murray/inactive-users-action@v1
-with:
-  token: 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
-  organization: MSILDigital
-  activity_days: 90
